@@ -49,12 +49,12 @@ nav li {
     align-items: center;
     margin: 20px;
     justify-content: center;
-    padding: 5px;
 }
 
 nav .border:hover {
     border: solid 1px #87191d;
 }
+
 li a {
     text-align:center; /*centralizando no meio da página*/
     justify-content: center;
@@ -106,8 +106,119 @@ input {
     padding: 0 100px;
 }
 
+.container_left {
+    min-width: 500px;
+}
 
 
 figure img {
-    width: 60vh;
+    width: 100%;
 }
+
+/* estilização dos livros para venda*/
+.container_sales {
+    font-size: 18px;
+    text-align: top;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+.container_sales img {
+        width: 100%;
+    }
+
+.container_sales div{
+    margin: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.container_sales h1, p {
+        padding: 5px;
+    }
+
+.row {max-width: 300px;}
+
+.row_ {max-width: 400px;}
+
+.autora {
+    font-size: small;
+    color: #5f5f5f;
+}
+ 
+button {
+    font-size: 15px;
+    padding: 2%;
+    color: #ffffff;
+    background-color: #87191d;
+    cursor: pointer;
+    border-style: none;
+}
+
+
+/* estilização sinopse*/
+.container_sinop {
+    display: flex;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    background-color:#87191d;
+ 
+    margin: 0;
+
+}
+
+
+/* responsividade */
+
+@media (max-width: 680px) { /* jquery para modificar o estilo e deixar responsivo 
+    qnd a tela max for 680px */
+    main {
+        background-color: black;
+    }
+
+    ul {
+        
+    }
+    nav li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height:  80px;
+        width: 350px;
+    }
+
+    li a {
+        font-size: 18px;
+    }
+
+    .container_left h1{
+        font-size: 30px;
+        max-width: 400px;
+    }
+
+    .container_left p{
+        font-size: 18px;
+        max-width: 400px;
+    }
+
+    .main{
+        width: 80%;
+        min-height: 250px;
+    }
+    .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input {
+        font-size: 18px;
+        width: 150px;
+        height: 50px;
+    }
+}
+
