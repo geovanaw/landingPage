@@ -12,6 +12,10 @@
     padding: 0;
     font-family: 'Century Schoolbook';
 }
+body, html {
+    height: 100vh;
+    width: 99.4vw;
+}
 
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
@@ -122,7 +126,7 @@ figure img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; 
     }
 
 .container_sales img {
@@ -133,6 +137,8 @@ figure img {
     margin: 100px;
     height: 100%;
     width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px; 
 }
 
 .container_sales h1, p {
@@ -160,28 +166,47 @@ button {
 
 /* estilização sinopse*/
 .container_sinop {
+    margin: auto; 
     display: flex;
-    width: 300px;
-    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    background-color:#87191d;
- 
-    margin: 0;
+    justify-content: center;
+    background-color: black;
+    margin-top: 10px;
+    height: 100vh;
+    width: 98vw;
+}
+.container_sinop div{
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+}
 
+.logo_csp { 
+    margin-top: 50px;    
+}
+
+.sinopse {
+    text-align: justify;
+    margin-top: 0;
+    padding: 30px;
+    font-size: 20px;
+    background-color:#87191d;
+    margin-bottom: 50px; 
 }
 
 
 /* responsividade */
 
-@media (max-width: 680px) { /* jquery para modificar o estilo e deixar responsivo 
+@media (max-width: 800px) { /* jquery para modificar o estilo e deixar responsivo 
     qnd a tela max for 680px */
     main {
         background-color: black;
-    }
-
-    ul {
+        max-width: 100vh;
         
     }
+
     nav li {
         display: flex;
         flex-direction: column;
@@ -219,6 +244,20 @@ button {
         font-size: 18px;
         width: 150px;
         height: 50px;
+    }
+
+    .container_sales div{
+        margin-top: 20px;
+        margin-bottom: 20px; 
+    }
+
+    .sinopse {
+        font-size: 15px;
+        padding: 0;
+    }
+    .container_sinop {
+        display: flex;
+        flex-direction: column;
     }
 }
 
