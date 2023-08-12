@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Pré-venda</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+    <title>Caminho de Sangue e Pólvora</title>
   </head>
   <body>
     <header>
@@ -12,35 +13,30 @@
         <ul>
           <li class="border"><a href="#sinopse">Sinopse</a></li>
           <li class="border"><a href="#sales">Pré-venda</a></li>
-          <li><img src="./imgs/logo.png" id="logo" alt="Logo de asas" /></li>
+          <li><a href="#main"><img src="./imgs/logo.png" id="logo" alt="Logo de asas" /></a></li> 
           <li class="border"><a href="#autora">Autora</a></li>
           <li class="border"><a href="#map">Nos encontre</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container" id="main">
       <div class="container_left">
         <h1>Um romance policial de um jeito que você nunca viu antes.</h1>
 
         <p class="sub">
           Conheça Charlotte, Scott, Alexander, Christopher e muitos outros. Ah,
           mas não se apegue, afinal, qualquer um pode ser um herói ou um vilão
-          disfarçado.
+          disfarçado. 
         </p>
 
         <form action="#sales">
+          <h2>Adquira agora, na pré-venda!</h3>
           <input type="submit" value="Comprar agora" />
         </form>
       </div>
 
-      <div class="container_right">
-        <figure>
-          <img
-            src="./imgs/capa_csp.png"
-            alt="Capa do livro Caminho de Sangue e Pólvora"
-          />
-        </figure>
+      <div>
       </div>
     </main>
 
@@ -50,7 +46,7 @@
         <h2>Caminho de Sangue e Pólvora</h2>
         <p class="autora">por Alexia Dankan</p>
         <p>Primeiro livro da autora!</p>
-        <p>R$ <b>39,90</b></p>
+        <p id="price">R$ <b>39,90</b></p>
         <br />
         <button type="button">Comprar agora</button>
       </div>
@@ -62,23 +58,25 @@
         <p>
           Os personagens de Caminho de Sangue e Pólvora voltam nesse spin off.
         </p>
-        <p>R$ <b>20,00</b></p>
+        <p id="price">R$ <b>20,00</b></p>
         <br />
         <button type="button">Comprar agora</button>
       </div>
 
-      <div class="row_">
+      <div class="row" id="row3">
         <img src="imgs/box_resized.png" />
         <h2>Box - Caminho de Sangue e Pólvora</h2>
         <p class="autora">por Alexia Dankan</p>
         <p>Receba a edição completa + spin off!</p>
-        <p>R$ <b>50,00</b></p>
+        <p id="price">R$ <b>50,00</b></p>
         <br />
         <button type="button">Comprar agora</button>
       </div>
     </section>
 
-    <div class="container_sinop">
+
+
+    <div   class="container_sinop">
       <div class="sinopse">
         <img src="imgs/logo_csp.png" />
         <h2>Sinopse</h2>
@@ -98,16 +96,46 @@
       </div>
     </div>
 
-    <section id="autora">
-      <div>
+    <div class="container_autora">
+        
+        <div class="autora_left">
+            <h2>Quer saber como os personagens de Caminho de Sangue e Pólvora se vestiriam para assistir <span id="barb">Barbie</span>?
+            <br>Dá play no video!</h1>
+
+            <video width="500" height="500" controls>
+                <source src="imgs/video.mp4" type="video/mp4">
+            </video>
+
+              <p class="siga">Siga <span>Alexia</span> nas redes sociais! </p>
+              <ul>
+                  <li><a href="https://www.instagram.com/alexiadankan/" target="_blank" rel="noopener noreferrer"><img src="./imgs/writer.png" class="icon" alt="Instagram de escritora" /></a></li>
+                  <li><a href="https://www.instagram.com/alexiadks/" target="_blank" rel="noopener noreferrer"><img src="./imgs/instagram.png" class="icon" alt="Instagram pessoal" /></a></li> 
+                  <li><a href="https://www.instagram.com/alexinup/" target="_blank" rel="noopener noreferrer"><img src="./imgs/study.png" class="icon" alt="Instagram de de estudante" /></a></li> 
+                  <li><a href="https://www.instagram.com/alexiathedancer/" target="_blank" rel="noopener noreferrer"><img src="./imgs/dance.png" class="icon" alt="Instagram de dançarina" /></a></li>  
+                </ul>
+        </div>
+  
+      <div class="autora_right">
+        <figure>
+          <img src="imgs/alexia.png" alt = "Retrato da autora">
+            <figcaption><h1>Alexia Dankan</h1></figcaption>
+        </figure>
+          
+
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          autem suscipit voluptates quasi omnis neque, cupiditate nihil vel!
-          Quasi, tempora. Rem officia, eligendi facilis mollitia beatae quam
-          expedita excepturi provident.
+          Alexia é 
         </p>
+
+       
       </div>
+
+    </div>
+
+    <section class="container_map">
+      <h1>Caminhos de Sangue e Pólvora estará disponível para compra (em espaço físico) em breve nas livrarias de Curitiba! </h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230483.05208082148!2d-49.2897982!3d-25.4951166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35351cdb3dd%3A0x6d2f6ba5bacbe809!2sCuritiba%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1691796983373!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
     <footer>
       <p>
         Desenvolvido por

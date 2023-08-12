@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
 
 #logo {
   margin-top: 20px;
-  width: 100%;
+  width: 25%;
 }
 
 header,
@@ -71,6 +71,14 @@ li a {
   text-decoration: none;
 }
 
+/* MENU */
+main {
+  background-image: url("imgs/capa_csp.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 .container {
   background-color: black;
   width: 99.4vw;
@@ -94,6 +102,10 @@ main p {
   padding: 20px;
 }
 
+main h2 {
+  padding: 20px;
+}
+
 input {
   font-family: "Century Schoolbook";
   font-size: 25px;
@@ -109,21 +121,15 @@ input {
 .container div {
   height: 100%;
   width: 50%;
-  margin: 100 30px;
-  padding: 5%;
 }
 
 .container_left {
   margin: auto;
-}
-
-figure img {
-  width: 80%;
+  padding: 5%;
 }
 
 /* estilização dos livros para venda*/
 .container_sales {
-  font-size: 18px;
   text-align: top;
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +138,7 @@ figure img {
 }
 
 .container_sales img {
-  width: 100%;
+  width: 130%;
 }
 
 .container_sales div {
@@ -141,22 +147,25 @@ figure img {
   width: 100%;
   margin-top: 150px;
   margin-bottom: 150px;
+  padding: 30px;
 }
 
-.container_sales h1,
-p {
-  padding: 5px;
+.container_sales h2 {
+  font-size: 30px;
+}
+.container_sales p {
+  font-size: 20px;
 }
 
 .row {
   max-width: 300px;
 }
 
-.row_ {
+#row3 {
   max-width: 400px;
 }
-.row_ img {
-  width: 120%;
+#row3 img {
+  width: 170%;
 }
 
 .autora {
@@ -164,24 +173,33 @@ p {
   color: #5f5f5f;
 }
 
+#price {
+  padding: 8px;
+  font-size: 30px;
+}
+
 button {
-  font-size: 15px;
+  font-size: 20px;
   padding: 2%;
   color: #ffffff;
   background-color: #87191d;
   cursor: pointer;
   border-style: none;
-  width: 100px;
-  height: 50px;
+  width: 200px;
+  height: 70px;
 }
 
-/* estilização sinopse*/
+/* estilização sinopse */
+
 .container_sinop {
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
+  background-image: url("./imgs/blood.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
   height: 100vh;
   width: 99.4vw;
 }
@@ -199,9 +217,98 @@ button {
 
 .sinopse {
   text-align: justify;
-  font-size: 20px;
-  background-color: #000000;
+  font-size: 25px;
+  background-color: transparent;
   color: white;
+}
+
+/*AUTORA */
+
+.container_autora {
+  background-color: rgb(255, 255, 255);
+  width: 99.4vw;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+}
+
+.container_autora div {
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  padding: 5%;
+}
+
+.container_left {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.container_autora h2 {
+  font-size: 25px;
+  margin: 10px;
+}
+
+video {
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container_autora h1 {
+  font-family: "Charline";
+  color: #87191d;
+  font-size: 30px;
+}
+
+.container_autora span {
+  font-family: "Charline";
+  color: #87191d;
+}
+
+.container_autora p {
+  text-align: justify;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.siga {
+  position: relative;
+  left: 33%;
+}
+
+.container_autora li {
+  list-style: none;
+  display: inline-block;
+}
+
+#barb {
+  color: rgb(255, 111, 190);
+}
+
+.autora_right img {
+  width: 50%;
+}
+
+/*MAPA*/
+
+.container_map {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.container_map iframe {
+  width: 100%;
+  position: relative;
 }
 
 /* responsividade */
@@ -221,7 +328,7 @@ button {
   }
 
   #logo {
-    width: 50%;
+    width: 30%;
   }
 
   li a {
@@ -236,10 +343,8 @@ button {
     align-items: center;
     justify-content: center;
     margin: 0;
-  }
-
-  .container img {
-    width: 100%;
+    background-position: bottom center;
+    background-size: 70%;
   }
 
   .container_left {
@@ -286,5 +391,22 @@ button {
     width: 100%;
     position: relative;
     left: 0%;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .siga {
+    position: relative;
+    left: 0%;
+  }
+
+  .autora_right img {
+    width: 100%;
+  }
+
+  .container_map {
+    display: none;
   }
 }
