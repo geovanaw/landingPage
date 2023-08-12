@@ -380,8 +380,9 @@ footer a {
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-image: url("imgs/blood.png");
-    overflow: hidden;
+    background-image: url("imgs/capa_csp_resized.png");
+    background-position: bottom center;
+    background-size: 100%;
   }
 
   .container_left {
@@ -410,6 +411,13 @@ footer a {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  button {
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+  }
+
   .row_ img {
     width: 120%;
   }
@@ -424,10 +432,11 @@ footer a {
     flex-direction: column;
   }
   .sinopse img {
-    width: 50%;
+    width: 100%;
     position: relative;
     left: 0%;
   }
+
   .sinopse h2 {
     font-size: 18px;
   }
@@ -441,12 +450,13 @@ footer a {
   }
 
   .siga {
+    font-size: 15px !important;
     position: relative;
     left: 0%;
   }
 
   .siga p {
-    font-size: 10px;
+    font-size: 1px;
   }
 
   .autora_right img {
@@ -472,12 +482,12 @@ footer a {
     font-size: 18px;
   }
 
-  footer p {
-    font-size: 15px;
+  footer {
+    display: none;
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 450px) and (max-width: 1300px) {
   /* jquery para modificar o estilo e deixar responsivo 
     qnd a tela max for 680px */
   nav,
@@ -500,7 +510,7 @@ footer a {
   }
 
   li a {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .container {
@@ -525,15 +535,15 @@ footer a {
 
   .container_left h1 {
     color: #87191d;
-    font-size: 25px;
+    font-size: 40px;
   }
 
   .container_left p {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   input {
-    font-size: 18px;
+    font-size: 20px;
     width: 150px;
     height: 50px;
   }
@@ -547,7 +557,8 @@ footer a {
   }
 
   .sinopse {
-    font-size: 18px;
+    min-width: 50%;
+    font-size: 20px;
     padding: 5px;
     width: 100%;
     align-items: center;
