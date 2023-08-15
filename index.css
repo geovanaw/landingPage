@@ -73,6 +73,23 @@ li a {
 }
 
 /* MENU */
+#animacao::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 main {
   width: 99.4vw;
   height: 99vh;
