@@ -14,6 +14,7 @@
 }
 body,
 html {
+  font-size: 62.5%;
   height: 100vh;
   width: 99.4vw;
 }
@@ -64,9 +65,9 @@ nav .border:hover {
 li a {
   text-align: center; /*centralizando no meio da página*/
   justify-content: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   margin: 20px;
-  padding: 10px;
+  padding: 30px;
   color: #fff;
   font-style: bold;
   text-decoration: none;
@@ -119,17 +120,18 @@ main h1 {
 }
 
 main p {
-  font-size: 25px;
+  font-size: 2.5rem;
   padding: 20px;
 }
 
 main h2 {
+  font-size: 2rem;
   padding: 20px;
 }
 
 input {
   font-family: "Century Schoolbook";
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #fff;
   background-color: #87191d;
   width: 220px;
@@ -137,6 +139,8 @@ input {
   margin: 20px;
   border-style: none;
   cursor: pointer;
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
 }
 
 .container div {
@@ -173,10 +177,10 @@ input {
 }
 
 .container_sales h2 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 .container_sales p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .row {
@@ -197,11 +201,11 @@ input {
 
 #price {
   padding: 8px;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 button {
-  font-size: 20px;
+  font-size: 2rem;
   padding: 2%;
   color: #ffffff;
   background-color: #87191d;
@@ -209,6 +213,8 @@ button {
   border-style: none;
   width: 200px;
   height: 70px;
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
 }
 
 /* estilização sinopse */
@@ -239,7 +245,7 @@ button {
 
 .sinopse {
   text-align: justify;
-  font-size: 25px;
+  font-size: 2.5rem;
   background-color: transparent;
   color: white;
 }
@@ -333,6 +339,7 @@ video {
 }
 
 .container_map h1 {
+  font-size: 2rem;
   padding: 30px;
 }
 .container_map iframe {
@@ -352,9 +359,11 @@ footer {
   text-align: center;
   background-color: white;
 }
+
 footer p {
   color: #000000;
   padding: 5px;
+  font-size: 1.8rem;
 }
 footer a {
   color: #000000;
@@ -496,7 +505,7 @@ footer a {
   }
 
   .autora_right p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   footer {
@@ -516,7 +525,7 @@ footer a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 20px;
     height: 80px;
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
